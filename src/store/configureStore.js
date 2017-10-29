@@ -1,5 +1,5 @@
 import { createStore, applyMiddleware } from 'redux';
-import { routerMiddleware } from 'react-router-redux'
+// import { routerMiddleware } from 'react-router-redux';
 import { composeWithDevTools } from 'redux-devtools-extension/developmentOnly';
 import thunk from 'redux-thunk';
 import createHistory from 'history/createBrowserHistory';
@@ -11,12 +11,12 @@ let middleware;
 if (process.env.NODE_ENV === 'production') { // eslint-disable-line no-undef
     middleware = [
         thunk,
-        routerMiddleware(history),
+        // routerMiddleware(history),
     ];
 } else {
     middleware = [
         thunk,
-        routerMiddleware(history),
+        // routerMiddleware(history),
     ];
 }
 

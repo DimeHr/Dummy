@@ -21,7 +21,7 @@ const App = (props) => {
                 To get started, edit <code>src/App.js</code> and save to reload.
             </p>
             <ButtonContainer>
-                <ButtonMain primary onClick={props.handleLogin}/>
+                <ButtonMain primary onClick={ props.handleLogin }/>
             </ButtonContainer>
             <PanelWithButton/>
         </div>
