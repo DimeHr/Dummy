@@ -10,6 +10,7 @@ export const history = createHistory(); // TODO check if we need it
 let middleware;
 if (process.env.NODE_ENV === 'production') { // eslint-disable-line no-undef
     middleware = [
+        require('redux-immutable-state-invariant')(), // eslint-disable-line global-require
         thunk,
         // routerMiddleware(history),
     ];
